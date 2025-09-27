@@ -1,0 +1,250 @@
+.wrapper{
+    height :150px;
+    display : flex;
+    align-items : center;
+    justify-content :center;
+}
+
+button{
+    padding :5px 10px;
+    border :0;
+    border-radius :5px;
+    font-weight: bold;
+    font-size: 140%;
+    background-color: #db1f48;
+    color: white;
+}
+
+.shadow{
+    box-shadow: 5px 5px 10px 2px rgb(0 0 0 / 0.8);
+}
+
+h1{
+    color: royalblue;
+    text-shadow: 2px 4px 4px rgb(46 91 173 / 0.6);
+}
+
+.wrapper0{
+    height: 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+}
+.box{
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    background-color: rgb(69 164 181);
+}
+.fancy{
+    text-align: center;
+    padding: 1em;
+    border: 0.5em solid black;
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+}
+
+.fancy0{
+    padding: 1em;
+    width: 100%;
+    height: 200px;
+    background-color:  #e4e4d9;
+background-image:
+    linear-gradient(175deg, transparent 95%, #8da389 95%),
+    linear-gradient(85deg, transparent 95%, #8da389 95%),
+    linear-gradient(175deg, transparent 90%, #b4b07f 90%),
+    linear-gradient(85deg, transparent 92%, #b4b07f 92%),
+    linear-gradient(175deg, transparent 85%, #c5a68e 85%),
+    linear-gradient(85deg, transparent 89%, #c5a68e 89%),
+    linear-gradient(175deg, transparent 80%, #ba9499 80%),
+    linear-gradient(85deg, transparent 86%, #ba9499 86%),
+    linear-gradient(175deg, transparent 75%, #9f8fa4 75%),
+    linear-gradient(85deg, transparent 83%, #9f8fa4 83%),
+    linear-gradient(175deg, transparent 70%, #74a6ae 70%),
+    linear-gradient(85deg, transparent 80%, #74a6ae 80%);
+}
+.fancy1{
+    text-align: center;
+    box-sizing: border-box;
+    width: 150px;
+    height: 150px;
+    padding: 80px 1em 0 1em;
+    margin: 0 100px;
+    position: relative;
+    background-color: #a4c9cf;
+    border-radius: 100% 100% 0 0;
+}
+
+.fancy1::before,
+.fancy1::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 100%;
+    background-color: #a4c9cf;
+}
+
+.fancy1::before{
+    border-bottom-right-radius: 0;
+    width: 150px;
+    left: -80px;
+    height: 150px
+}
+
+.fancy1::after{
+    border-bottom-left-radius: 0;
+    width: 100px;
+    height: 100px;
+    right: -60px;
+}
+
+blockquote {
+    min-height: 5em;
+    padding: 1em 4em;
+    font: 1em/150% sans-serif;
+    position: relative;
+    background-color: lightgoldenrodyellow;
+  }
+  
+  blockquote::before,
+  blockquote::after {
+    position: absolute;
+    height: 3rem;
+    font:
+      6rem/100% Georgia,
+      "Times New Roman",
+      Times,
+      serif;
+  }
+  
+  blockquote::before {
+    content: "“";
+    top: 0.3rem;
+    left: 0.9rem;
+  }
+  
+  blockquote::after {
+    content: "”";
+    bottom: 0.3rem;
+    right: 0.8rem;
+  }
+  
+  blockquote:lang(fr)::before {
+    content: "«";
+    top: -1.5rem;
+    left: 0.5rem;
+  }
+  
+  blockquote:lang(fr)::after {
+    content: "»";
+    bottom: 2.6rem;
+    right: 0.5rem;
+  }
+  
+  blockquote i {
+    display: block;
+    font-size: 0.8em;
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+
+  .fancy2 {
+    position: relative;
+    background-color: #ffffcc;
+    padding: 2rem;
+    text-align: center;
+    max-width: 200px;
+  }
+  
+  .fancy2::before {
+    position: absolute;
+    z-index: -1;
+    bottom: 15px;
+    right: 5px;
+    width: 50%;
+    top: 80%;
+    max-width: 200px;
+  
+    box-shadow: 0px 13px 10px black;
+    rotate: 4deg;
+  }
+  
+  .wrapper1 {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button {
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 140%;
+    cursor: pointer;
+  }
+  
+  .fade {
+    background-color: #db1f48;
+    color: white;
+    transition: background-color 5s;
+  }
+  
+  .fade:hover {
+    background-color: royalblue ;
+  }
+  
+  .fade:focus,
+  .fade:active {
+    background-color: black;
+    transition: none;
+  }
+
+  .wrapper1{
+    height: 200px;
+    display: flex;
+    gap: 20px;
+  }
+
+  .box{
+    border: 5px solid black;
+
+  }
+
+  .box img{
+    height: 100%;
+    width: 100%;
+  }
+
+  .box1 img{
+    object-fit: cover;
+  }
+  .box2 img{
+    object-fit: contain;
+  }
+
+  .box3 img{
+    object-fit: fill;
+  }
+
+  .wrapper2 h1 + p{
+    font-weight: bold;
+    font-size: 150%;
+    color: rebeccapurple;
+  }
+
+  .wrapper3 p::first-line {
+   font-weight: bold;
+    font-size: 130%;
+  }
+
+ .ref::before {
+    font-weight: bold;
+    color: navy;
+    content: "refrence";
+ }

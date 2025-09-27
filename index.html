@@ -1,0 +1,135 @@
+<html>
+    <head>
+        <link  rel="stylesheet" href="index.css"></link>
+    </head>
+    <body>
+<h3>javascript numbers</h3>
+<P id="Demo1"></P>
+<h3>javascript numbers</h3>
+<p id="Demo2"></p>
+<h4>javascript numbers</h4>
+<p id="Demo3"></p>
+<h4>javascript numbers</h4>
+<p id="Demo4"></p>
+<h4>javascript numbers</h4>
+<p id="Demo5"></p>
+<h4>javascript numbers</h4>
+<P id="Demo6"></P>
+<p>Division by zero generates Infinity;</p>
+<p id="Demo7"></p>
+<h2>JavaScript Numbers</h2>
+<p>Numeric constants, preceded by 0x, are interpreted as hexadecimal:</p>
+<p id="Demo8"></p>
+<h4>javascript numbers</h4>
+<P id="Demo9"></P>
+<h4>javascript numbers</h4>
+<P id="demo"></P>
+<h4>javascript numbers</h4>
+<P id="demo1"></P>
+<h4>javascript arrys</h4>
+<P id="demo2"></P>
+<h4>javascript arrays</h4>
+<P id="demo3"></P>
+<h4>javascript arrays</h4>
+<P id="demo4"></P>
+<h4>javascript arrays</h4>
+<P id="demo5"></P>
+<h4>javascript array string methods</h4>
+<p id="demo6"></p>
+<h4>javascript array lenght property</h4>
+<p id="demo7"></p>
+<h3>the push method in javascript</h3>
+<button onclick="myFunction()">try it</button>
+<P id="demo8"></P>
+<h3>javascript arrays</h3>
+<P id="demo11"></P>
+<h3>javascript dates</h3>
+<P id="dimo"></P>
+<h3>javascript math</h3>
+<P id="dimo1"></P>
+<h3>javascript math</h3>
+<P id="dimo2"></P>
+<h3>javascript ma</h3>
+<script>
+    document.getElementById("Demo1").innerHTML = 10 / "apple";
+  
+    let m = 10 / "apple";
+    document.getElementById("Demo2").innerHTML = isNaN(m);
+  
+    let u = 10 / "apple";
+    document.getElementById("Demo3").innerHTML = isNaN(u);
+  
+    let r = NaN;
+    let h = 10;
+    document.getElementById("Demo4").innerHTML = r + h;
+  
+    let o = NaN;
+    let n = "5";
+    document.getElementById("Demo5").innerHTML = o + n;
+  
+    let j = NaN;
+    document.getElementById("Demo6").innerHTML = typeof j;
+  
+    let k = 2 / 0;
+    let l = -2 / 0;
+    document.getElementById("Demo7").innerHTML = k + "<br>" + l;
+  
+    let b = 0xFF;
+    document.getElementById("Demo8").innerHTML = "0xFF = " + b;
+
+    let c = 123;
+    let s = new Number (123);
+    document.getElementById("Demo9") .innerHTML = typeof c + "<br>" + typeof s;
+
+    let a = 500;
+    let x = new Number (500);
+    document.getElementById("demo").innerHTML = ( a==x );
+
+    let g = 600;
+    let p = new Number (600);
+    document.getElementById("demo1").innerHTML = ( g===p );
+
+let cars=["BMW","Saab","volvo"]
+document.getElementById("demo2").innerHTML = cars;
+
+let car= new Array("volvo","BMW","Saab");
+document.getElementById("demo3").innerHTML = car;
+
+let CAR= ["BMW","saab","volvo"];
+document.getElementById("demo4").innerHTML = CAR[0];
+
+let Car=["BMW","volvo","saab"];
+Car[0]="opel";
+document.getElementById("demo5").innerHTML = Car;
+
+const fruits=["orange","mango","apple"];
+let myList = fruits.toString();
+document.getElementById("demo6").innerHTML = myList;
+
+const Fruits=["orange","mango","apple"];
+document.getElementById("demo7").innerHTML = Fruits[2];
+
+const FRUIT=["orange","apple","mango"];
+document.getElementById("demo8").innerHTML = FRUIT;
+function myFunction (){
+    FRUIT[FRUIT.length] = "Lemon";
+    document.getElementById("demo8").innerHTML = FRUIT;
+}
+
+const person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46; 
+document.getElementById("demo11").innerHTML =
+person[0] + " " + person.length;
+
+const d = new Date();
+document.getElementById("dimo").innerHTML = d.toISOString();
+
+document.getElementById("dimo1").innerHTML = Math.PI;
+
+document.getElementById("dimo2").innerHTML = Math.abs(-4.2);
+  </script>
+  <script src="index.js"></script>
+    </body>
+</html>

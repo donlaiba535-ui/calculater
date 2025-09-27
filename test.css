@@ -1,0 +1,15 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    color: purple;
+    margin: 2em;
+}
+
+.output{
+    min-height: 100px;
+}
+
+.output1{
+    margin: 1rem;
+}

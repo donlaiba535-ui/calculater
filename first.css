@@ -1,0 +1,25 @@
+
+body{
+    text-align: center;
+}
+
+table{
+    padding-top: 10px;
+    padding-left: 500px;
+
+    
+}
+
+th{
+    border-bottom: dashed;
+    padding:50px;
+    
+}
+.plus-icon {
+    font-size: 24px;
+    font-weight: bold;
+    color: red;
+    z-index: -1;
+  }
+
+  
