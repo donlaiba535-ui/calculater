@@ -83,3 +83,32 @@ const listItem = document.createElement("li");
 listItem.textContent = itemText;
 list2.appendChild(listItem);
 totalBox.textContent = `Total: $${total.toFixed(2)}`;
+
+
+
+const list3 = document.querySelector(".output1");
+const searchInput = document.querySelector(".output1 input");
+const searchBtn = document.querySelector(".output1 button");
+
+list3.textContent = "";
+
+const myHistory = [];
+const MAX_HISTORY = 5;
+
+searchBtn.addEventListener("click", () =>{
+    if (searchInput.value !== ""){
+    list.textContent= "";
+    for(const itemText of myHistory) {
+        const listItem = document.createElement("li");
+        listItem.textContent = itemText;
+        list.appendChild(listItem);
+    }
+    if(myHistory.lenght >= MAX_HISTORY) {
+        searchInput.value = "";
+        searchInput.focous();
+    }
+
+    }
+});
+
+
